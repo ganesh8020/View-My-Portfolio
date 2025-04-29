@@ -1,0 +1,259 @@
+/* Reset Default Styles */
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+* {
+    box-sizing: border-box; /* Ensure elements don't exceed container width */
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+  
+
+.scrolling-text {
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    animation: scrollText 20s linear infinite; /* Adjust speed as needed */
+}
+
+/* Animation for scrolling text */
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    height: 100vh; /* Full viewport height */
+    gap: 20px; /* Adds spacing between image and text */
+    padding: 20px; /* Prevents items from touching edges */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height for centering */
+}
+
+.profile-container img {
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Keep it square */
+    border-radius: 25%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits well */
+}
+.text-container {
+    max-width: 400px; /* Limits text width for better readability */
+    text-align: justify; /* Makes text more readable */
+    line-height: 1.6; /* Increases space between lines */
+    word-wrap: break-word; /* Ensures words break correctly */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #2c3e50;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+    
+
+/* Sidebar Navigation */
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes elements to both ends */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.email {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .left-info, .right-info {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  /* Social Links Styling */
+.social-links {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+  }
+  
+  /* Social Links Styling */
+.social-links {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+  }
+  
+  .social-links h3 {
+    color: #333;
+  }
+  
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    margin: 10px;
+  }
+  
+  /* Icon Style - Removed filter */
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  /* Icon Container for horizontal alignment */
+  .icon-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  
+  
+
+  .about-me {
+    display: flex;
+    justify-content: space-between; /* Spaces out the content */
+    align-items: center;
+    padding: 20px;
+}
+
+.resume-img {
+    width: 100px; /* Fixed width */
+    height: auto; /* Keep the aspect ratio intact */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    object-fit: cover; /* Ensures the image content fits within the container */
+}
+
+
+.resume-links {
+    flex: 1;
+    text-align: right; /* Align the links to the right */
+}
+
+.download-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.download-link:hover {
+    background-color: #45a049;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 0px; /* Leaves space for sidebar */
+    padding: 10px;
+}
+/* Resume Styling */
+iframe {
+    border: none;
+    background-color: white;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+

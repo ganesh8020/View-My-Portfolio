@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+
+.nav-btn {
+    position: fixed;
+    top: 20px; /* Distance from the top of the page */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.back-btn {
+    left: 20px; /* Position on the left side */
+}
+
+.next-btn {
+    right: 20px; /* Position on the right side */
+}
+
+.nav-btn:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+.pdf{
+    height : 70vh;
+    width: 100%;
+    border: none;
+  margin-top: 10px;
+}
+.pdf2{
+    height : 70vh;
+    width: 100%;
+    border: none;
+  margin-top: 10px;
+}
+
+
+            </style>
+            </head>
+<body>
+    <button class="nav-btn back-btn" onclick="window.history.back()">Back</button>
+<button class="nav-btn next-btn" onclick="window.location.href='contact.html'">Next</button><br><br>
+<br>
+<h3 style="text-align: center;">My Certificates</h3>
+
+<iframe src="Certificate.1.pdf" class="pdf"></iframe><br>
+
+<iframe src="Certificate.2.pdf" class="pdf2"></iframe>
+
+    </body>
+</html>
